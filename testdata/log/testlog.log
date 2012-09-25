@@ -1,0 +1,5 @@
+2012-09-21 20:38:25,283 [INFO] View called with your bla bla content...
+2012-09-21 20:38:25,317 [DEBUG] Plugin <plugins.workers.validators.filetype.FileTypeValidationPlugin object at 0x10ed25b50> produced data: {}
+2012-09-21 20:38:25,318 [ERROR] Core BUG!: KeyError. No key "some_test" in processing options.
+2012-09-21 20:38:25,582 [DEBUG] Core process_pluginpoint method begin processing: <dms_plugins.workers.validators.filetype.FileTypeValidationPlugin object at 0x10ed25b50>.
+2012-09-21 20:38:25,582 [INFO] Results OK. Response provided.

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block body %}
+{% if files_list %}
+    <h1 id="files_header">Log files:</h1>
+    <ul id="log_file_names">
+    {% for index, file in files_list.iteritems %}
+        <li class="log_file_name"><a class="log_file_link" href="{% url "logfile_view" %}">{{ file }}</a></li>
+    {% endfor %}
+    </ul>
+{% endif %}
+{% endblock %}

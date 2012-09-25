@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block body %}
+{% if file_dict %}
+    <table id="logfile">
+        {% if header_list %}
+        <thead>
+            <tr>
+            {% for item in header_list %}
+                <th>{{ item }}</th>
+            {% endfor %}
+            </tr>
+        </thead>
+        {% endif %}
+        {% for line in file_dict  %}
+        <tr>
+            <!-- TODO: paginate -->
+            {% for item in line %}
+                {% for atom in item %}
+                    <td>{{ atom }}</td>
+                {% endfor %}
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+{% endif %}
+{% endblock %}
