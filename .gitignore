@@ -1,2 +1,3 @@
 *.pyc
 django-log-file-viewer/*.pyc
+*.pyc
