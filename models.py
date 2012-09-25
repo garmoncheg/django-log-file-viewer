@@ -7,7 +7,7 @@ import re
 
 from django.db import models
 
-from src.django_log_file_viewer.settings import *
+from settings import *
 
 class LogFilesManager(object):
 

@@ -3,8 +3,8 @@ from django.http import HttpResponse
 from django.shortcuts import render_to_response
 from django.http import HttpResponseBadRequest
 from django.contrib.auth.decorators import login_required, user_passes_test
-from src.django_log_file_viewer.settings import *
-from src.django_log_file_viewer.models import LogFilesManager
+from settings import *
+from models import LogFilesManager
 
 __all__ = ['logfiles_list', 'logfile_view', 'logfile_to_csv']
 

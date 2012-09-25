@@ -1,5 +1,5 @@
 from django.conf.urls.defaults import patterns, url
-from src.django_log_file_viewer.views import *
+from views import *
 
 urlpatterns = patterns('',
     url(r'^django_log_file_viewer/logfiles/$', logfiles_list, {'template_name': 'logfiles_admin.html'}, name='log-files-list-admin'),
