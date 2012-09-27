@@ -2,6 +2,8 @@ django-log-file-view 0.3
 ________________________
 = fixed no files bug (when you view logs with no files in that directory)
 + starting to add pagination variables (file listed of certain amount of lines only)
+= fixed file has less then 1 line or paginator tries to read less then LOG_FILES_PAGINATE_LINES
+= fixed admin Home link inside a log file
 
 django-log-file-view 0.2
 ________________________
