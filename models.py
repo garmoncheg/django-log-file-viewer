@@ -44,9 +44,16 @@ class LogFilesManager(object):
         # Reading amount of lines
         line_num = from_line
         for count in range(LOG_FILES_PAGINATE_LINES):
-            line = read_file[line_num]
-            matches_set = prog.findall(str(line))
-            file_dict.append(matches_set)
+            try:
+                line = read_file[line_num]
+                matches_set = prog.findall(str(line))
+                file_dict.append(matches_set)
+                line_num += 1
+            except IndexError:
+                # log file is shorter then LOG_FILES_PAGINATE_LINES or
+                # amount of lines smaller then from_line left
+                pass
+
         # Making file length data
         file_len = read_file.__len__
         # Making logfile indexes header
