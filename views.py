@@ -14,14 +14,13 @@ def logfiles_list(request, template_name='listfiles.html'):
     """Lists Log Files in settings directory"""
     manager = LogFilesManager()
     files_list = manager.list_logfiles(LOG_FILES_DIR)
-
+    indexes = {}
     if files_list:
-        indexes = {}
         count = 0
         for index in files_list:
             indexes[str(count)] = index
             count += 1
-    return render_to_response(template_name,{'files_list': indexes,})
+    return render_to_response(template_name, {'files_list': indexes,})
 
 @login_required
 @user_passes_test(lambda u: u.is_superuser)
@@ -34,7 +33,7 @@ def logfile_view(request, logfile_id, template_name='logfile.html'):
     except Exception:
         return HttpResponseBadRequest()
     logfile = manager.get_file(os.path.join(LOG_FILES_DIR, files_list[int(logfile_id)]))
-    header_list, file_dict = manager.parse_log_file(logfile)
+    logfile_lines, header_list, file_dict = manager.parse_log_file(logfile)
     context = {
             'file_dict': file_dict,
             'header_list': header_list,
@@ -54,7 +53,7 @@ def logfile_to_csv(request, logfile_id):
     except Exception:
         return HttpResponseBadRequest()
     logfile = manager.get_file(os.path.join(LOG_FILES_DIR, files_list[int(logfile_id)]))
-    header_list, file_dict = manager.parse_log_file(logfile)
+    logfile_lines, header_list, file_dict = manager.parse_log_file(logfile)
     # Constructing CSV file
     response = HttpResponse(mimetype='text/csv')
     response['Content-Disposition'] = 'attachment; filename=%s.csv' % filename

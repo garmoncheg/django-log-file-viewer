@@ -30,7 +30,7 @@ class LogFilesManager(object):
         fobj = open(file_full_path)
         return fobj
 
-    def parse_log_file(self, logfile):
+    def parse_log_file(self, logfile, from_line=0):
         """Returns parsed read file
 
         in form of entry names header (taken from Rgex group names)
@@ -41,9 +41,14 @@ class LogFilesManager(object):
         # Creating Regexp prog to match entries
         file_dict = []
         prog = re.compile(LOG_FILES_RE)
-        for line in read_file:
+        # Reading amount of lines
+        line_num = from_line
+        for count in range(LOG_FILES_PAGINATE_LINES):
+            line = read_file[line_num]
             matches_set = prog.findall(str(line))
             file_dict.append(matches_set)
+        # Making file length data
+        file_len = read_file.__len__
         # Making logfile indexes header
         header_length = prog.groups
         header_list = []
@@ -52,7 +57,7 @@ class LogFilesManager(object):
                 header_list.append(number)
             for group_name, index in prog.groupindex.iteritems():
                 header_list[int(index) - 1] = group_name
-        return (header_list, file_dict)
+        return (file_len, header_list, file_dict)
 
 class string_with_title(str):
     def __new__(cls, value, title):

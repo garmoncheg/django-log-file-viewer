@@ -1,0 +1,14 @@
+django-log-file-view 0.3
+________________________
+= fixed no files bug (when you view logs with no files in that directory)
++ starting to add pagination variables (file listed of certain amount of lines only)
+
+django-log-file-view 0.2
+________________________
++ initial stable working version
++ adds admin functionality
+
+django-log-file-view 0.1
+________________________
++ displays log files list with a url reference
++ shows up file content parsed into a table

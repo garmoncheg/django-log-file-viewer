@@ -14,4 +14,6 @@ LOG_FILES_RE = getattr(
     '(?P<date>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2},\d{3})\s\[(?P<type>[A-Z]+)\]\s(?P<message>.+)'
 )
 
-__all__ = ['LOG_FILES_DIR', 'LOG_FILES_RE',]
+LOG_FILES_PAGINATE_LINES = getattr(settings, 'LOG_FILES_PAGINATE_LINES', 20)
+
+__all__ = ['LOG_FILES_DIR', 'LOG_FILES_RE', 'LOG_FILES_PAGINATE_LINES',]
