@@ -1,5 +1,35 @@
-2012-09-21 20:38:25,283 [INFO] View called with your bla bla content...
-2012-09-21 20:38:25,317 [DEBUG] Plugin <plugins.workers.validators.filetype.FileTypeValidationPlugin object at 0x10ed25b50> produced data: {}
-2012-09-21 20:38:25,318 [ERROR] Core BUG!: KeyError. No key "some_test" in processing options.
-2012-09-21 20:38:25,582 [DEBUG] Core process_pluginpoint method begin processing: <dms_plugins.workers.validators.filetype.FileTypeValidationPlugin object at 0x10ed25b50>.
-2012-09-21 20:38:25,582 [INFO] Results OK. Response provided.
+2012-09-21 20:38:25,283 [INFO] 1 View called with your bla bla content...
+2012-09-21 20:38:25,317 [DEBUG] 2 Plugin <plugins.workers.validators.filetype.FileTypeValidationPlugin object at 0x10ed25b50> produced data: {}
+2012-09-21 20:38:25,318 [ERROR] 3 Core BUG!: KeyError. No key "some_test" in processing options.
+2012-09-21 20:38:25,582 [DEBUG] 4 Core process_pluginpoint method begin processing: <dms_plugins.workers.validators.filetype.FileTypeValidationPlugin object at 0x10ed25b50>.
+2012-09-21 20:38:25,582 [INFO] 5 Results OK. Response provided.
+2012-09-21 20:38:25,283 [INFO] 6 View called with your bla bla content...
+2012-09-21 20:38:25,317 [DEBUG] 7 Plugin <plugins.workers.validators.filetype.FileTypeValidationPlugin object at 0x10ed25b50> produced data: {}
+2012-09-21 20:38:25,318 [ERROR] 8 Core BUG!: KeyError. No key "some_test" in processing options.
+2012-09-21 20:38:25,582 [DEBUG] 9 Core process_pluginpoint method begin processing: <dms_plugins.workers.validators.filetype.FileTypeValidationPlugin object at 0x10ed25b50>.
+2012-09-21 20:38:25,582 [INFO] 10 Results OK. Response provided.
+2012-09-21 20:38:25,283 [INFO] 11 View called with your bla bla content...
+2012-09-21 20:38:25,317 [DEBUG] 12 Plugin <plugins.workers.validators.filetype.FileTypeValidationPlugin object at 0x10ed25b50> produced data: {}
+2012-09-21 20:38:25,318 [ERROR] 13 Core BUG!: KeyError. No key "some_test" in processing options.
+2012-09-21 20:38:25,582 [DEBUG] 14 Core process_pluginpoint method begin processing: <dms_plugins.workers.validators.filetype.FileTypeValidationPlugin object at 0x10ed25b50>.
+2012-09-21 20:38:25,582 [INFO] 15 Results OK. Response provided.
+2012-09-21 20:38:25,283 [INFO] 16 View called with your bla bla content...
+2012-09-21 20:38:25,317 [DEBUG] 17 Plugin <plugins.workers.validators.filetype.FileTypeValidationPlugin object at 0x10ed25b50> produced data: {}
+2012-09-21 20:38:25,318 [ERROR] 18 Core BUG!: KeyError. No key "some_test" in processing options.
+2012-09-21 20:38:25,582 [DEBUG] 19 Core process_pluginpoint method begin processing: <dms_plugins.workers.validators.filetype.FileTypeValidationPlugin object at 0x10ed25b50>.
+2012-09-21 20:38:25,582 [INFO] 20 Results OK. Response provided.
+2012-09-21 20:38:25,283 [INFO] 21 View called with your bla bla content...
+2012-09-21 20:38:25,317 [DEBUG] 22 Plugin <plugins.workers.validators.filetype.FileTypeValidationPlugin object at 0x10ed25b50> produced data: {}
+2012-09-21 20:38:25,318 [ERROR] 23 Core BUG!: KeyError. No key "some_test" in processing options.
+2012-09-21 20:38:25,582 [DEBUG] 24 Core process_pluginpoint method begin processing: <dms_plugins.workers.validators.filetype.FileTypeValidationPlugin object at 0x10ed25b50>.
+2012-09-21 20:38:25,582 [INFO] 25 Results OK. Response provided.
+2012-09-21 20:38:25,283 [INFO] 26 View called with your bla bla content...
+2012-09-21 20:38:25,317 [DEBUG] 27 Plugin <plugins.workers.validators.filetype.FileTypeValidationPlugin object at 0x10ed25b50> produced data: {}
+2012-09-21 20:38:25,318 [ERROR] 28 Core BUG!: KeyError. No key "some_test" in processing options.
+2012-09-21 20:38:25,582 [DEBUG] 29 Core process_pluginpoint method begin processing: <dms_plugins.workers.validators.filetype.FileTypeValidationPlugin object at 0x10ed25b50>.
+2012-09-21 20:38:25,582 [INFO] 30 Results OK. Response provided.
+2012-09-21 20:38:25,283 [INFO] 31 View called with your bla bla content...
+2012-09-21 20:38:25,317 [DEBUG] 32 Plugin <plugins.workers.validators.filetype.FileTypeValidationPlugin object at 0x10ed25b50> produced data: {}
+2012-09-21 20:38:25,318 [ERROR] 33 Core BUG!: KeyError. No key "some_test" in processing options.
+2012-09-21 20:38:25,582 [DEBUG] 34 Core process_pluginpoint method begin processing: <dms_plugins.workers.validators.filetype.FileTypeValidationPlugin object at 0x10ed25b50>.
+2012-09-21 20:38:25,582 [INFO] 35 Results OK. Response provided.

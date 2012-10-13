@@ -75,7 +75,9 @@ To parse/display these log files you need:
 
 ## TODO's:
 
-* Add pagination to both log files list and log file content
+* Add pagination to log files list
+* Ability to download all log files in a single archive using python data
+* add some style to log files list (maybe table, like log files lines list)
 
 ## Reference:
 

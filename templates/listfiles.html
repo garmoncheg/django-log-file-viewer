@@ -4,7 +4,7 @@
     <h1 id="files_header">Log files:</h1>
     <ul id="log_file_names">
     {% for index, file in files_list.iteritems %}
-        <li class="log_file_name"><a class="log_file_link" href="{% url "logfile_view" %}">{{ file }}</a></li>
+        <li class="log_file_name"><a class="log_file_link" href="{% url logfile_view index %}">{{ file }}</a></li>
     {% endfor %}
     </ul>
 {% endif %}

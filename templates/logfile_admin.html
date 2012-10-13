@@ -103,7 +103,12 @@
                 {% block result_list %}
                     {% if action_form and actions_on_top and cl.full_result_count %}{% admin_actions %}{% endif %}
 
-                    {% if file_dict %}
+                    {% if paginator %}
+                        {% block pagination %}
+                        {% include 'logfile_paginator.html' %}
+                        {% endblock %}
+                    {% endif %}
+                    {% if paginator.object_list %}
                     <div class="results">
                         <table id="result_list" cellspacing="0">
                             {% if header_list %}
@@ -116,7 +121,7 @@
                             </thead>
                             {% endif %}
                             <tbody>
-                            {% for line in file_dict  %}
+                            {% for line in paginator.object_list  %}
                             <tr class="row1">
                                 {% for item in line %}
                                     {% for atom in item %}
@@ -131,7 +136,6 @@
                     {% endif %}
                     {% if action_form and actions_on_bottom and cl.full_result_count %}{% admin_actions %}{% endif %}
                 {% endblock %}
-                {# TODO: {% block pagination %}{% pagination cl %}{% endblock %}  #}
             </form>
         </div>
     </div>

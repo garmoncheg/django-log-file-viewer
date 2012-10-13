@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block body %}
-{% if file_dict %}
+{% if paginator.object_list %}
     <table id="logfile">
         {% if header_list %}
         <thead>
@@ -11,9 +11,8 @@
             </tr>
         </thead>
         {% endif %}
-        {% for line in file_dict  %}
+        {% for line in paginator.object_list  %}
         <tr>
-            <!-- TODO: paginate -->
             {% for item in line %}
                 {% for atom in item %}
                     <td>{{ atom }}</td>
