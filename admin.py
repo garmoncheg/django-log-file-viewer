@@ -1,10 +1,11 @@
 
 
 from django.contrib import admin
-from models import LogFiles
+from models import LogFile
 
-class LogFilesAdmin(admin.ModelAdmin):
+
+class LogFileAdmin(admin.ModelAdmin):
     def has_add_permission(self, request):
         return False
 
-admin.site.register(LogFiles, LogFilesAdmin)
+admin.site.register(LogFile, LogFileAdmin)

@@ -1,23 +1,20 @@
-django-log-file-view 0.4 (beta)
+django-log-file-view 0.4
 ________________________
-+ added proper pagination in django-admin
-+ digg style paginator
-= refactoring of read file lines method now must use cheaper filesystem access methods
-* fixed csv file to return full file instead of paginated lines
+= fixed admin app name plural name
 
-django-log-file-view 0.3 (alpha)
+django-log-file-view 0.3
 ________________________
-* fixed no files bug (when you view logs with no files in that directory)
+= fixed no files bug (when you view logs with no files in that directory)
 + starting to add pagination variables (file listed of certain amount of lines only)
-* fixed file has less then 1 line or paginator tries to read less then LOG_FILES_PAGINATE_LINES
-* fixed admin Home link inside a log file
+= fixed file has less then 1 line or paginator tries to read less then LOG_FILES_PAGINATE_LINES
+= fixed admin Home link inside a log file
 
-django-log-file-view 0.2 (alpha)
+django-log-file-view 0.2
 ________________________
 + initial stable working version
 + adds admin functionality
 
-django-log-file-view 0.1 (alpha)
+django-log-file-view 0.1
 ________________________
 + displays log files list with a url reference
 + shows up file content parsed into a table

@@ -1,6 +1,5 @@
 """
-Logging for:
-
+Logging reader
 """
 import os
 import re
@@ -17,12 +16,12 @@ class LogFilesManager(object):
         file_list = []
         # List only files
         for root,directory,files in os.walk(path):
-            for file in files:
+            for f in files:
                 # List only readable files
                 try:
-                    fi = open(os.path.join(path, file))
+                    fi = open(os.path.join(path, f))
                     fi.close()
-                    file_list.append(file)
+                    file_list.append(f)
                 except Exception:
                     pass
         return file_list
@@ -98,7 +97,7 @@ class string_with_title(str):
     __copy__ = lambda self: self
     __deepcopy__ = lambda self, memodict: self
 
-class LogFiles(models.Model):
+class LogFile(models.Model):
     """Hack object to be added to Django admin"""
     class Meta:
         app_label = string_with_title("django_log_file_viewer", "Django Log Files")
