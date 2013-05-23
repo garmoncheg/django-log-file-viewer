@@ -1,6 +1,10 @@
-django-log-file-view 0.4
+django-log-file-view 0.5
 ________________________
 = fixed admin app name plural name
+
+django-log-file-view 0.4
+________________________
+= bugfixes
 
 django-log-file-view 0.3
 ________________________
