@@ -1,3 +1,7 @@
+django-log-file-view 0.6
+________________________
+= fixed bug with tests failing
+
 django-log-file-view 0.5
 ________________________
 = fixed admin app name plural name
