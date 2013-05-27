@@ -17,10 +17,10 @@ class SimpleTest(TestCase):
         """
         self.assertEqual(1 + 1, 2)
 
-class LogFilesManagerTests(TestCase):
-    def test_read_certain_log_file_lines(self):
-        manager = LogFilesManager()
-        files_list = manager.list_logfiles(LOG_FILES_DIR)
-        logfile = manager.get_file(os.path.join(LOG_FILES_DIR, files_list[int(0)]))
-        file_len, header_list, file_dict = manager.parse_log_file(logfile, from_line=100)
-        print file_dict
+# class LogFilesManagerTests(TestCase):
+#     def test_read_certain_log_file_lines(self):
+#         manager = LogFilesManager()
+#         files_list = manager.list_logfiles(LOG_FILES_DIR)
+#         logfile = manager.get_file(os.path.join(LOG_FILES_DIR, files_list[int(0)]))
+#         file_len, header_list, file_dict = manager.parse_log_file(logfile, from_line=100)
+#         print file_dict
