@@ -1,3 +1,11 @@
+django-log-file-view 0.7
+________________________
+= fix for admin_media_prefix deprecation bugs
+
+django-log-file-view 0.7
+________________________
++ update to django 1.6
+
 django-log-file-view 0.6
 ________________________
 = fixed bug with tests failing
