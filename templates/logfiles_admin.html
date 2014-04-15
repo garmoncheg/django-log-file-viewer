@@ -88,7 +88,7 @@
                 {% endif %}
             {% endblock %}
 
-            <form id="changelist-form" action="" method="post"{% if cl.formset.is_multipart %} enctype="multipart/form-data"{% endif %}>{% csrf_token %}
+            <form id="changelist-form" action="" method="post"{% if cl.formset.is_multipart %} enctype="multipart/form-data"{% endif %}>
                 {% if cl.formset %}
                     <div>{{ cl.formset.management_form }}</div>
                 {% endif %}
@@ -114,7 +114,7 @@
                                     <a href="{% url "log-file-admin" index %}">{{ file }}</a>
                                 </td>
                                 <td>
-                                    <a href="{% url 'log-file-to-csv-admin' index %}" ><img alt="Download CSV" src="/static/admin/img/admin/selector-add.gif"></a>
+                                    <a href="{% url 'log-file-to-csv-admin' index %}" >Download CSV</a>
                                 </td>
                             </tr>
                             {% endfor %}

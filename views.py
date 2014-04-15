@@ -75,7 +75,7 @@ def logfile_to_csv(request, logfile_id):
     file_dict = manager.parse_log_file(logfile, 0, full=True)
     # Constructing CSV file
     header_list = manager.compile_header_from_regexp()
-    response = HttpResponse(mimetype='text/csv')
+    response = HttpResponse(content_type='text/csv')
     response['Content-Disposition'] = 'attachment; filename=%s.csv' % filename
     writer = csv.writer(response)
     if header_list:
