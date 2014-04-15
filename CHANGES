@@ -1,4 +1,12 @@
-django-log-file-view 0.7
+
+django-log-file-view 0.9
+________________________
+= fix deprecation and inconsistencies
+= fix broken image
+= fix content_type instead of mimetype
+= fix csrf_token unused and removed
+
+django-log-file-view 0.8
 ________________________
 = fix for admin_media_prefix deprecation bugs
 
